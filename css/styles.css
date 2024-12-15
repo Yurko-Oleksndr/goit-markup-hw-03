@@ -48,7 +48,7 @@ img {
 }
 
 .main-header {
-    border-bottom: #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .main-head {
@@ -115,6 +115,11 @@ img {
     text-align: center;
     color: #fff;
     max-width: 496px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    display: block;
 }
 
 .main-button {
@@ -130,6 +135,8 @@ img {
     height: 56px;
     border: none;
     border-radius: 4px;
+    display: block;
+    margin: 0 auto;
 }
 
 .main-button:hover,
@@ -137,8 +144,17 @@ img {
     background: #404bbf;
 }
 
+.skills-title {
+    display: none;
+}
+
 .skills-list {
     display: flex;
+    gap: 24px;
+}
+
+.skills-list-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .skills-named {
@@ -147,6 +163,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .skills-about {
@@ -169,22 +186,22 @@ img {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-list {
     display: flex;
-}
-
-.team-list > li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 
 .team-list-design {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+}
+
+.team-list-design-item {
+    padding: 32px 0;
 }
 
 .team-name {
@@ -194,6 +211,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-jobtitle {
@@ -207,6 +225,20 @@ img {
 
 .portfolio-list {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-list-element {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-header {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
 }
 
 .portfolio-name {
@@ -215,6 +247,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-about {
@@ -233,10 +266,12 @@ img {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .foot-design {
     background: #2e2f42;
+    padding: 100px 0;
 }
 
 .foot-information {
@@ -245,6 +280,19 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
+}
+
+.logo-web-foot {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-end-foot {

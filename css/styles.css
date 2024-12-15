@@ -24,6 +24,8 @@ img {
 
 .container {
     width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section {
@@ -38,11 +40,15 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: flex;
+    margin-right: 76px;  
 }
 
 .logo-end {
     color: #2e2f42;
+}
+
+.main-header {
+    border-bottom: #e7e9fc;
 }
 
 .main-head {
@@ -51,6 +57,13 @@ img {
 
 .main-menu {
     display: flex;
+    align-items: center;
+    margin-right: 332px;
+}
+
+.main-menu-list {
+    display: flex;
+    gap: 40px;
 }
 
 .menu-design {
@@ -59,6 +72,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .menu-design:hover,
@@ -68,6 +82,11 @@ img {
 
 .info {
     font-style: normal
+}
+
+.main-info {
+    display: flex;
+    gap: 40px;
 }
 
 .info-design {
@@ -85,6 +104,7 @@ img {
 
 .main-design {
     background: #2e2f42;
+    padding: 188px 0;
 }
 
 .main-title {
@@ -94,6 +114,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
 }
 
 .main-button {
@@ -104,6 +125,11 @@ img {
     color: #fff;
     background: #4d5ae5;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .main-button:hover,
